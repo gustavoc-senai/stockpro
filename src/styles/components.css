@@ -1,0 +1,75 @@
+@layer components {
+  h1 {
+    @apply mb-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl;
+  }
+  .panel {
+    @apply rounded-xl border border-[#252934] bg-[#12151c] p-5 sm:p-6;
+  }
+  .primary {
+    @apply rounded-lg border border-blue-400/20 bg-[#3268e8] px-4 py-2.5 text-[13px] font-semibold text-white hover:bg-[#4579f1] disabled:opacity-50;
+    box-shadow:
+      0 2px 3px #0002,
+      inset 0 1px #ffffff0c;
+  }
+  label {
+    @apply text-[12px] font-medium text-[#b5bac9];
+  }
+  input,
+  select,
+  textarea {
+    @apply mt-2 block w-full rounded-lg border border-[#2b303d] bg-[#0e1118] px-3 py-3 text-[13px] text-zinc-100 outline-none placeholder:text-[#60687b] focus:border-[#5685f2] focus:ring-2 focus:ring-blue-500/10;
+  }
+  select {
+    @apply pr-8;
+  }
+  textarea {
+    @apply resize-y;
+  }
+  th,
+  td {
+    @apply border-b border-[#242934] px-4 py-4;
+  }
+  th {
+    @apply bg-[#171b24] text-[11px] font-medium uppercase tracking-wider text-[#8992a6];
+  }
+  td {
+    @apply text-[13px] text-[#a9b1c3];
+  }
+  tbody tr:hover {
+    @apply bg-white/[0.015];
+  }
+  td button {
+    @apply text-xs text-blue-400 hover:text-blue-300 disabled:opacity-50;
+  }
+  .notice {
+    @apply rounded-lg border border-blue-500/20 bg-blue-500/5 p-4 text-sm leading-6 text-blue-200;
+  }
+  .error {
+    @apply border-red-500/20 bg-red-500/5 text-red-300;
+  }
+  .page-heading {
+    @apply flex flex-wrap items-center justify-between gap-5 pb-2;
+  }
+  .eyebrow {
+    @apply mb-3 text-[10px] font-semibold tracking-[.16em] text-blue-400;
+  }
+  .status-badge {
+    @apply inline-flex items-center gap-1.5 rounded-md border border-zinc-700/50 bg-zinc-500/5 px-2 py-1 text-[10px] font-medium text-zinc-400;
+  }
+  .status-badge.active {
+    @apply border-emerald-500/15 bg-emerald-500/[.06] text-emerald-400;
+  }
+  .empty-state {
+    @apply flex min-h-60 flex-col items-center justify-center gap-3 py-10 text-center text-zinc-500;
+  }
+  .empty-state > svg {
+    @apply mb-2 rounded-xl border border-zinc-700/50 bg-zinc-800/30 p-3 text-zinc-400;
+    box-sizing: content-box;
+  }
+  .empty-state h2 {
+    @apply text-base font-medium text-zinc-200;
+  }
+  .empty-state p {
+    @apply max-w-sm text-sm leading-6;
+  }
+}
